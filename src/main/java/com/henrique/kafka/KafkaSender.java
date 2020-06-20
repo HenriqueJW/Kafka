@@ -1,8 +1,6 @@
 package com.henrique.kafka;
 
-import java.util.concurrent.ExecutionException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
@@ -17,14 +15,6 @@ public class KafkaSender {
         
 	
 	public void send(String message) {
-            System.out.println("AAAAAAA");
-            try { 
-                System.out.println(kafkaTemplate.send(kafkaTopic, message).get());
-            } catch (InterruptedException ex) {
-                Logger.getLogger(KafkaSender.class.getName()).log(Level.SEVERE, null, ex);
-            } catch (ExecutionException ex) {
-                Logger.getLogger(KafkaSender.class.getName()).log(Level.SEVERE, null, ex);
-            }
-	    
+            kafkaTemplate.send(kafkaTopic, message);
 	}
 }
