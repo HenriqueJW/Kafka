@@ -1,6 +1,6 @@
 package com.henrique.kafka;
 
-//package com.henrique.coletor;
+//
 //
 //import org.apache.kafka.common.serialization.Serdes;
 //import org.apache.kafka.common.utils.Bytes;
@@ -12,13 +12,13 @@ package com.henrique.kafka;
 //import org.apache.kafka.streams.kstream.Materialized;
 //import org.apache.kafka.streams.kstream.Produced;
 //import org.apache.kafka.streams.state.KeyValueStore;
-//
-//import java.util.Arrays;
-//import java.util.Properties;
-//
-//public class IntegradorKafka {
-//
-//    public class WordCountApplication {
+
+import java.util.Arrays;
+import java.util.Properties;
+
+public class IntegradorKafka {
+
+    public void inserir(double i,double j ,double k){
 //
 //        Properties props = new Properties();
 //
@@ -47,7 +47,7 @@ package com.henrique.kafka;
 //        KafkaStreams streams = new KafkaStreams(builder.build(), props);
 //
 //        streams.start ();
-//    }
-//
-//}
-//
+    }
+
+}
+

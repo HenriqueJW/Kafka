@@ -1,23 +1,21 @@
 package com.henrique.kafka;
 
-//package com.henrique.coletor;
-//
-//
-//import java.io.File;
-//import java.io.FileNotFoundException;
-//
-//import java.io.IOException;
-//import java.io.PrintWriter;
-//import java.math.BigDecimal;
-//import java.math.RoundingMode;
-//import java.util.Timer;
-//import java.util.TimerTask;
-//
-//import javax.swing.JOptionPane;
-//
-//public class Coletor {
-//
-//    static double[] dados;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.util.Timer;
+import java.util.TimerTask;
+
+import javax.swing.JOptionPane;
+
+public class Coletor {
+
+    static double[] dados;
 //
 //    public static void main(String[] args) {
 //
@@ -51,10 +49,10 @@ package com.henrique.kafka;
 //        timer.scheduleAtFixedRate(new TimerTask() {
 //            public void run() {
 //                dados = Explorador.getDados();
-////                integrador.inserir(dados[0], dados[1], dados[2]);
+//                integrador.inserir(dados[0], dados[1], dados[2]);
 //            }
 //        }, 0, 1000);
 //
 //    }
-//
-//}
+
+}
